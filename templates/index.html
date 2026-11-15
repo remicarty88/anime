@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AnimeTV</title>
+<link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="left">
+    <a class="brand" href="#/catalog">Anime<b>TV</b></a>
+  </div>
+
+  <form class="search" id="searchForm">
+    <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="#fff" stroke-width="1.6"><circle cx="7" cy="7" r="5.2"/><path d="M11 11l4 4"/></svg>
+    <input type="search" id="searchInput" placeholder="Поиск аниме" autocomplete="off">
+    <button type="submit">Найти</button>
+  </form>
+
+  <nav class="nav">
+    <a class="pill" href="#/catalog">Каталог</a>
+    <span class="round">A</span>
+  </nav>
+</header>
+
+<main id="view" class="view"></main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div>
+      <div class="logo">Anime<b>TV</b></div>
+      <div class="copy">© 2026 AnimeTV</div>
+    </div>
+    <div>
+      <h4>О сайте</h4>
+      <ul><li><a href="#/catalog">Каталог</a></li><li><a href="#/catalog">Новинки</a></li><li><a href="#/catalog">Контакты</a></li><li><a href="#/catalog">FAQ</a></li></ul>
+    </div>
+    <div>
+      <h4>Зрителям</h4>
+      <ul><li><a href="#/catalog?genre=action">Экшен</a></li><li><a href="#/catalog?genre=romance">Романтика</a></li><li><a href="#/catalog?genre=fantasy">Фэнтези</a></li><li><a href="#/catalog?genre=comedy">Комедия</a></li></ul>
+    </div>
+  </div>
+</footer>
+
+<div id="toast" class="toast" hidden></div>
+
+<script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.17/dist/hls.min.js"></script>
+<script src="/static/app.js"></script>
+</body>
+</html>
